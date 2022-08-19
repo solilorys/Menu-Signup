@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("../img/bg-intro-mobile.png")
+}
+
+.intro {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.intro__botao {
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #464040;
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 1.2rem 3rem;   
+}
+
+/*superior, direito, inferior e esquerdo.*/
+
+.formulario__container {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 1rem;
+}
+
+.formulario__input {
+    border-radius: 5px;
+    border: 1px solid #c5bebe;
+    margin-top: 20px;
+    padding: 1rem;
+    width: 85%;
+}
+
+.formulario__botao {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.formulario__footer {
+    color: #c5bebe;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+/*superior, direito, inferior e esquerdo.*/
+@media screen and (min-width: 600px) {
+    .main {
+        display: flex;
+    }
+    .bg {
+        background-image: url("../img/bg-intro-desktop.png")
+    }
+    .intro {
+        width: 30%;
+        text-align: initial;
+        margin: auto;
+        font-size: 16px;
+    }
+    .intro h2 {
+        font-weight: 600;
+        font-size: 45px;
+    }
+    .formulario {
+        width: 35%;
+        margin: 5em auto 0 auto;
+    }
+    .formulario__container {
+        padding: 1.6rem;
+    }
+    .intro__botao{
+        width: 93%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .formulario__input {
+        width: 93%;
+    }
+}
